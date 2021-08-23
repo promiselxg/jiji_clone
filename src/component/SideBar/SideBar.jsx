@@ -41,7 +41,7 @@ const SideBar = () => {
         />
         <Item
           Image="https://assets.jiji.ng/art/attributes/categories/hobbies.png"
-          title="spots, atys &amp; outdoors"
+          title="spots, arts &amp; outdoors"
           count="11,201"
         />
         <Item

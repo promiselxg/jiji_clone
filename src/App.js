@@ -1,13 +1,14 @@
 import Header from "./component/Header/Header";
 import "./App.scss";
 import SideBar from "./component/SideBar/SideBar";
+import Body from "./component/Body/Body";
 function App() {
   return (
     <div className="app__container">
       <Header />
       <section className="app__body">
         <SideBar />
-        <div className="hello">ok</div>
+        <Body />
       </section>
     </div>
   );
