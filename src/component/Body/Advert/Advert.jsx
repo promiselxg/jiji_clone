@@ -1,15 +1,17 @@
 import "./Advert.scss";
-import { AddCircle } from "@material-ui/icons";
+import { AddCircle, ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 const Advert = () => {
   return (
     <>
       <div className="advert__container">
         <div className="advert__carousel">
           <div className="image">
+            <ArrowBackIos className="sideArrow left" />
             <img
               src="https://assets.jiji.ng/static/img/banners/main_how_to_buy.jpg"
               alt="image_slide"
             />
+            <ArrowForwardIos className="sideArrow right" />
           </div>
         </div>
         <div className="post__ad">

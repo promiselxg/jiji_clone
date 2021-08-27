@@ -10,7 +10,25 @@
       width: 100%;
       height: 200px;
       overflow-y: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
 
+      .sideArrow {
+        background-color: rgb(22, 22, 22, 0.5);
+        cursor: pointer;
+        height: 40%;
+        color: white;
+        position: absolute;
+
+        &.left {
+          left: 0;
+          padding: 0px 0px 0px 4px;
+        }
+        &.right {
+          right: 0;
+        }
+      }
       img {
         width: 100%;
         height: 200px;
