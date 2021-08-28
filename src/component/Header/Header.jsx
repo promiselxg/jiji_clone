@@ -1,4 +1,3 @@
-import "./Header.scss";
 import HeaderBanner from "./HeaderBanner/HeaderBanner";
 import HeaderTop from "./HeaderTop/HeaderTop";
 const Header = () => {
