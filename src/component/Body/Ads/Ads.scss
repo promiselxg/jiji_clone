@@ -29,6 +29,44 @@
       .ad__image {
         height: 230px;
         width: 230px;
+        position: relative;
+        .ad__special {
+          background-color: var(--header-color-bg);
+          color: #fff;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        .ad__picsCount {
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 5px 10px;
+          color: #fff;
+          position: absolute;
+          top: 206px;
+          left: 0;
+          font-size: 12px;
+          border-top-right-radius: 8px;
+        }
+        .icon {
+          position: absolute;
+          top: 210px;
+          right: 0;
+          font-size: 12px !important;
+          width: 36px;
+          height: 36px;
+          margin-right: 10px;
+          color: var(--header-color-bg);
+          background-color: #fff;
+          box-shadow: 0 1px 2px rgb(96 125 135 / 15%);
+          transition: all 200ms ease;
+
+          &:hover {
+            transition: all 200ms ease;
+            box-shadow: 2px 2px 4px rgb(96 125 135 / 40%);
+          }
+        }
         img {
           width: 230px;
           height: 230px;
@@ -42,7 +80,7 @@
       .ad__info {
         padding: 8px 0px 0px 8px;
         .ad__title {
-          margin-top: 5px;
+          margin-top: 8px;
           font-size: 16px;
           color: #2a2a2a;
         }
