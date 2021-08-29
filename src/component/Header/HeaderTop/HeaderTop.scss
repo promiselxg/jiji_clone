@@ -80,6 +80,7 @@
   display: flex;
   width: 100%;
   height: 100vh;
+
   .modal__content {
     margin-left: auto;
     margin-right: auto;
@@ -94,7 +95,25 @@
       padding: 50px;
       background-color: whitesmoke;
       border-radius: 5px;
+      position: relative;
 
+      .clear {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 20px;
+        margin-top: 10px;
+        color: #ccc;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 300ms ease;
+
+        &:hover {
+          background-color: transparent;
+          color: #000;
+          transition: all 300ms ease;
+        }
+      }
       div {
         width: 350px;
         text-align: center;
@@ -158,6 +177,34 @@
         a {
           text-decoration: none;
           color: var(--header-color-bg);
+        }
+        .w-50 {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          width: 100%;
+          a {
+            .icon {
+              width: 170px;
+              display: flex;
+              justify-content: space-evenly;
+              margin-right: 10px;
+              &.facebook {
+                margin-top: 0px;
+              }
+            }
+          }
+          .MuiButton-startIcon {
+            margin-left: 0px;
+            margin-right: 0px;
+          }
+        }
+        .MuiInputLabel-shrink {
+          padding-right: 5px !important;
+          background-color: whitesmoke;
+        }
+        .input {
+          margin-bottom: 10px;
         }
       }
     }
