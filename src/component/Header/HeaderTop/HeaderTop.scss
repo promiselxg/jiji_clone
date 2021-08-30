@@ -97,6 +97,11 @@
       border-radius: 5px;
       position: relative;
 
+      &.register {
+        height: 450px;
+        overflow-y: scroll;
+      }
+
       .clear {
         position: absolute;
         top: 0;
@@ -182,6 +187,7 @@
           display: flex;
           align-items: center;
           margin-top: 20px;
+          margin-bottom: 10px;
           width: 100%;
           a {
             .icon {
@@ -202,6 +208,13 @@
         .MuiInputLabel-shrink {
           padding-right: 5px !important;
           background-color: whitesmoke;
+        }
+        .Mui-checked {
+          color: var(--header-color-bg) !important;
+        }
+        .checkbox {
+          display: flex;
+          align-items: center;
         }
         .input {
           margin-bottom: 10px;

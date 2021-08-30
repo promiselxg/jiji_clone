@@ -4,6 +4,7 @@ import {
   Modal,
   Divider,
   TextField,
+  Checkbox,
 } from "@material-ui/core";
 import { Close } from "@material-ui/icons";
 import { useState } from "react";
@@ -15,6 +16,7 @@ const HeaderTop = () => {
   const [loginopen, setLogin] = useState(false);
   const [newRegister, setNewRegister] = useState(false);
   const [newLogin, setNewLogin] = useState(false);
+  const [checked, setChecked] = useState(true);
   const user = false;
 
   //  Register / Login button
@@ -46,12 +48,17 @@ const HeaderTop = () => {
 
   // close button
   const handleClose = (elm) => {
-    if (elm !== "register") {
+    if (elm !== "text") {
       setNewLogin(false);
       setNewRegister(false);
       setLogin(false);
       setRegister(false);
     }
+  };
+
+  //  checkbox
+  const handleCheck = (event) => {
+    setChecked(event.target.checked);
   };
 
   return (
@@ -78,7 +85,7 @@ const HeaderTop = () => {
               </Link>
             </div>
             <div className="postAd">
-              <Button>SELL</Button>
+              <Button onClick={() => handleOpen("login")}>SELL</Button>
             </div>
           </div>
         </Container>
@@ -172,7 +179,7 @@ const HeaderTop = () => {
         </div>
       </Modal>
 
-      {/* login with phone and email */}
+      {/* login with phone or email */}
       <Modal open={newLogin} onClose={() => handleClose("login")}>
         <div className="modal__container">
           <div className="modal__content">
@@ -186,11 +193,13 @@ const HeaderTop = () => {
                   label="Email or Phone number"
                   variant="outlined"
                   className="input"
+                  value=""
                 />
                 <TextField
                   label="Password"
                   variant="outlined"
                   className="input"
+                  value=""
                 />
                 <span
                   style={{
@@ -202,7 +211,10 @@ const HeaderTop = () => {
                     width: "100%",
                   }}
                 >
-                  <Link to="/" style={{ alignItems: "center !important" }}>
+                  <Link
+                    to="/auth/forgotpassword"
+                    style={{ alignItems: "center !important" }}
+                  >
                     Forgot your password
                   </Link>
                 </span>
@@ -211,8 +223,94 @@ const HeaderTop = () => {
                 </Button>
                 <span>
                   Don't have an account?{" "}
-                  <Link to="/" onClick={() => handleOpen("login")}>
+                  <Link to="/" onClick={() => handleOpen("register")}>
                     Registration
+                  </Link>
+                </span>
+                <span className="divider">
+                  <Divider className="divid" />
+                  <span>or</span>
+                </span>
+                <div className="w-50">
+                  <Link to="/">
+                    <Button className="icon google" startIcon={<Apple />}>
+                      via Google
+                    </Button>
+                  </Link>
+                  <Link to="/">
+                    <Button className="icon facebook" startIcon={<Facebook />}>
+                      via Facebook
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Modal>
+
+      {/* Register with phone or email */}
+      <Modal open={newRegister} onClose={() => handleClose("register")}>
+        <div className="modal__container ">
+          <div className="modal__content ">
+            <div className="container register">
+              <span className="clear" onClick={() => handleClose("register")}>
+                <Close />
+              </span>
+              <div>
+                <h3>Register via email or phone</h3>
+                <form>
+                  <TextField
+                    label="Enter email"
+                    variant="outlined"
+                    className="input"
+                    autoComplete="enter-email"
+                    value=""
+                  />
+                  <TextField
+                    label="Password"
+                    variant="outlined"
+                    className="input"
+                    type="password"
+                    autoComplete="password"
+                    value=""
+                    helperText="Never disclose your Jiji password to anyone"
+                  />
+                  <TextField
+                    label="First name"
+                    variant="outlined"
+                    className="input"
+                    autoComplete="first-name"
+                    value=""
+                  />
+                  <TextField
+                    label="Last name (optional)"
+                    variant="outlined"
+                    className="input"
+                    autoComplete="last-name"
+                    value=""
+                  />
+                  <TextField
+                    label="Phone number (digits only)"
+                    variant="outlined"
+                    className="input"
+                    autoComplete="phone-number"
+                    value=""
+                  />
+                  <span className="checkbox">
+                    <Checkbox checked={checked} onChange={handleCheck} />
+                    <Link to="/rules">
+                      I agree with <b>rules</b>
+                    </Link>
+                  </span>
+                  <Button className="icon phone" disabled>
+                    REGISTER
+                  </Button>
+                </form>
+                <span>
+                  Already have an account?{" "}
+                  <Link to="/" onClick={() => handleOpen("login")}>
+                    Sign in
                   </Link>
                 </span>
                 <span className="divider">
