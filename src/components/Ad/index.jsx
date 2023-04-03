@@ -33,7 +33,7 @@ const ClassifiedAds = () => {
             </div>
           </div>
         </div>
-        <h1>Trending Ads</h1>
+        <h1 className="font-[700] text-[20px]">Trending Ads</h1>
         <div className="flex w-full">
           <div className="w-full grid grid-cols-4  gap-2">
             <Card
