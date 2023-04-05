@@ -4,7 +4,7 @@ import { FiBookmark } from 'react-icons/fi';
 const Card = ({ img, title, price, count }) => {
   return (
     <>
-      <div className="card bg-base-100 shadow-xl rounded-sm cursor-pointer">
+      <div className="card bg-base-100 shadow-slate-200  rounded-sm cursor-pointer hover:shadow-xl">
         <figure className="w-full h-[150px] min-h-[150px]">
           <Image img={img} alt="car" />
         </figure>

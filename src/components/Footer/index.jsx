@@ -13,7 +13,7 @@ const Footer = () => {
           />
         </div>
         <div className="flex  bg-[#3DB83A] h-fit py-5">
-          <div className="container mx-auto">
+          <div className="w-full container mx-auto">
             <div className="w-full grid grid-cols-5  gap-2">
               <div className="flex flex-col gap-y-2 text-[whitesmoke]">
                 <h2 className="text-[#006304]">About us</h2>
