@@ -1,9 +1,88 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { FiEyeOff, FiEye } from 'react-icons/fi';
+import DataContext from '../../../context/DataContext';
+import Links from '../../Links';
+import SocialAccount from '../../Social';
 
 const RegisterWithPhone = () => {
+  const { model, switchScreen } = useContext(DataContext);
   return (
     <>
-      <h1>Register with Phone</h1>
+      <div className="container">
+        <p className="py-1 text-sm font-[500]">Register via email or phone</p>
+        <div className="flex w-full pt-2 mb-3">
+          <input
+            type="text"
+            placeholder="Enter email"
+            className="w-full border rounded p-3 outline-none"
+          />
+        </div>
+        <div className="flex w-full border rounded p-3 mb-3 items-center gap-2">
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full outline-none"
+          />
+          <FiEyeOff className="cursor-pointer" />
+        </div>
+        <div className="text-[12px] mt-[-10px] ml-[10px] text-gray-400">
+          Never disclose your Jiji password to anyone
+        </div>
+        <div className="flex w-full pt-2 mb-1">
+          <input
+            type="text"
+            placeholder="First name"
+            className="w-full border rounded p-3 outline-none"
+          />
+        </div>
+        <div className="flex w-full pt-2 mb-1">
+          <input
+            type="text"
+            placeholder="Last name (optional)"
+            className="w-full border rounded p-3 outline-none"
+          />
+        </div>
+        <div className="flex w-full pt-2 mb-1">
+          <input
+            type="text"
+            placeholder="Phone (digits only)"
+            className="w-full border rounded p-3 outline-none"
+          />
+        </div>
+        <div className="flex items-center py-2 gap-2">
+          <input
+            type="checkbox"
+            name=""
+            id=""
+            className="checkbox checkbox-accent w-[15px] h-[15px] rounded-none"
+          />
+          <Links
+            url="/"
+            label="I agree with rules"
+            className="text-[green] text-sm font-semibold"
+          />
+        </div>
+        <button
+          className=" btn w-full gap-4 bg-[#00b53f] text-[#fff] px-10  border-none text-[16px] uppercase font-[600] rounded hover:bg-green-600 disabled:opacity-75 disabled:bg-[#00b53f] disabled:text-white "
+          disabled
+        >
+          Register
+        </button>
+        <div className="text-center items-center pt-2">
+          <p className="text-[12px]">
+            {' '}
+            Already have an account?
+            <label
+              htmlFor={model}
+              onClick={() => switchScreen('loginWithSocial')}
+              className="text-[green] font-[600] text-sm ml-1 cursor-pointer"
+            >
+              Sign in
+            </label>
+          </p>
+        </div>
+        <SocialAccount />
+      </div>
     </>
   );
 };

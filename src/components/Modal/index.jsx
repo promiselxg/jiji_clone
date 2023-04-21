@@ -32,7 +32,7 @@ const Modal = () => {
           >
             ✕
           </label>
-          <div className="p-5 ">
+          <div className="p-5 max-h-[500px]">
             <div className="flex justify-between gap-5 pb-5">
               <button className="btn bg-transparent text-[green] px-12 border-[#eee] text-[16px] capitalize font-light hover:bg-transparent hover:border-green-500">
                 English
