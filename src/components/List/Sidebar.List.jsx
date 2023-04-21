@@ -2,11 +2,11 @@ import React from 'react';
 import Image from '../Image';
 import { FiChevronRight } from 'react-icons/fi';
 
-const SidebarList = ({ img, title, count, ...children }) => {
+const SidebarList = ({ img, title, count, icon, ...children }) => {
   return (
     <>
       <div
-        className="flex items-center justify-between w-full mb-1 cursor-pointer hover:bg-blue-100 p-1"
+        className="flex items-center justify-between w-full mb-1 cursor-pointer hover:bg-blue-100 p-1 mas"
         {...children}
       >
         <div className="flex items-center gap-2">
@@ -17,9 +17,11 @@ const SidebarList = ({ img, title, count, ...children }) => {
           </div>
         </div>
 
-        <div>
-          <FiChevronRight className="text-[1.2rem] mr-1 text-inherit" />
-        </div>
+        {icon && (
+          <div>
+            <FiChevronRight className="text-[1.2rem] mr-1 text-inherit" />
+          </div>
+        )}
       </div>
     </>
   );

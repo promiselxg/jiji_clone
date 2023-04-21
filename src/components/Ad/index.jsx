@@ -60,6 +60,54 @@ const ClassifiedAds = () => {
               count="11"
               price="6,000 per annum"
             />
+            <Card
+              img={`https://pictures-nigeria.jijistatic.com/114716379_MzAwLTIyNS01NjM1ZjZmZDNk.webp`}
+              title="Toyota land cruise prado 4.0..."
+              count="10"
+              price="5,000,000"
+            />
+            <Card
+              img={`https://pictures-nigeria.jijistatic.com/119352578_MTUwMC0xMTI1LTRhMDU5N2M0M2U.webp`}
+              title="Apple iPhone 8 Plus 64 GB Gold"
+              count="3"
+              price="87,500"
+            />
+            <Card
+              img={`https://pictures-nigeria.jijistatic.com/119348526_NzYwLTEwMTQtMmJkZjM0OGEwMg.webp`}
+              title="Furnished 2bdrm Bungalow..."
+              count="5"
+              price="500,000 per annum"
+            />
+            <Card
+              img={`https://pictures-nigeria.jijistatic.com/118996414_MzAwLTQwMC0wZTY0MmM3NTk3.webp`}
+              title="2bdrm Block of Flats in Ayobo"
+              count="11"
+              price="6,000 per annum"
+            />
+            <Card
+              img={`https://pictures-nigeria.jijistatic.com/119356556_MTUwMC0yMDAwLTRhZGViZmU5MDA.webp`}
+              title="Toyota land cruise prado 4.0..."
+              count="10"
+              price="5,000,000"
+            />
+            <Card
+              img={`https://pictures-nigeria.jijistatic.com/102293136_MzAwLTQwMS03MjNkZDgzNGNl.webp`}
+              title="Apple iPhone 8 Plus 64 GB Gold"
+              count="3"
+              price="87,500"
+            />
+            <Card
+              img={`https://pictures-nigeria.jijistatic.com/119344504_MTAyNC03NjgtNjRmYjYzN2FmMw.webp`}
+              title="Furnished 2bdrm Bungalow..."
+              count="5"
+              price="500,000 per annum"
+            />
+            <Card
+              img={`https://pictures-nigeria.jijistatic.com/119386908_MTUwMC0yMDAwLThiOTc5MGFjOTA.webp`}
+              title="2bdrm Block of Flats in Ayobo"
+              count="11"
+              price="6,000 per annum"
+            />
           </div>
         </div>
       </div>
