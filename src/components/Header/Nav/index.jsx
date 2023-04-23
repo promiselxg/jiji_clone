@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import Modal from '../../Modal';
-import DataContext from '../../../context/DataContext';
+import { Link } from 'react-router-dom';
+import FormToggleContext from '../../../context/FormToggleContext';
 
 const HeaderNav = () => {
-  const { switchScreen, model } = useContext(DataContext);
+  const { switchScreen, model } = useContext(FormToggleContext);
   return (
     <>
       <div
@@ -12,11 +13,13 @@ const HeaderNav = () => {
       >
         <div className="container mx-auto flex items-center justify-between">
           <div className="logo">
-            <img
-              src="https://play-lh.googleusercontent.com/r1iugk-4gWDV0nSxTjxakdEW_fNAGlhh3MC7QQQ6ij3uD3IYpjPk5dF6drhcCuoc9kQ"
-              alt="jiji"
-              className="w-15 h-12"
-            />
+            <Link to="/">
+              <img
+                src="https://play-lh.googleusercontent.com/r1iugk-4gWDV0nSxTjxakdEW_fNAGlhh3MC7QQQ6ij3uD3IYpjPk5dF6drhcCuoc9kQ"
+                alt="jiji"
+                className="w-15 h-12"
+              />
+            </Link>
           </div>
           <div className="flex items-center gap-5">
             <div className="flex gap-2 text-whitesmoke">

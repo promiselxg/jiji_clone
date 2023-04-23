@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { FaGoogle, FaFacebookF } from 'react-icons/fa';
 import Links from '../../Links';
-import DataContext from '../../../context/DataContext';
+import FormToggleContext from '../../../context/FormToggleContext';
 
 const RegisterWithSocial = () => {
-  const { model, switchScreen } = useContext(DataContext);
+  const { model, switchScreen } = useContext(FormToggleContext);
   return (
     <>
       <div className="container w-full">

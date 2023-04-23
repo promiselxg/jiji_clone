@@ -1,12 +1,12 @@
+import { useContext } from 'react';
 import LoginWithSocial from './Login/LoginWithSocial';
 import RegisterWithSocial from './Register/RegisterWithSocial';
-import DataContext from '../../context/DataContext';
+import FormToggleContext from '../../context/FormToggleContext';
 import LoginWithPhone from './Login/LoginWithPhone';
 import RegisterWithPhone from './Register/RegisterWithPhone';
-import { useContext } from 'react';
 
 const Modal = () => {
-  const { model } = useContext(DataContext);
+  const { model } = useContext(FormToggleContext);
 
   let wrapper = '';
   if (model === 'loginWithSocial') {
