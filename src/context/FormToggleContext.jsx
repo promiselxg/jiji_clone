@@ -8,6 +8,7 @@ export const FormToggleProvider = ({ children }) => {
   const switchScreen = (elem) => {
     setModel(elem);
   };
+
   return (
     <FormToggleContext.Provider value={{ model, switchScreen }}>
       {children}

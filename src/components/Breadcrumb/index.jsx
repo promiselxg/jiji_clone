@@ -12,7 +12,10 @@ const Breadcrumb = ({ data }) => {
           {data.map((link, i) => {
             return (
               <li key={i} className="">
-                <Link className="text-sm hover:text-black" to={link.url}>
+                <Link
+                  className="bg-white text-[rgba(0,0,0,0.4)] rounded-[15px] px-[8px] py-[1px] text-[12px] text-sm hover:text-black"
+                  to={link.url}
+                >
                   {link.label}
                 </Link>
               </li>
@@ -25,3 +28,13 @@ const Breadcrumb = ({ data }) => {
 };
 
 export default Breadcrumb;
+
+export const BreadcrumbLabel = (props) => {
+  return (
+    <>
+      <span className="bg-white rounded-[15px] px-[8px] py-[1px] text-[12px]">
+        {props.label}
+      </span>
+    </>
+  );
+};

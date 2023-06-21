@@ -25,3 +25,18 @@ a {
   border: 3px solid #212121;
   border-radius: 14px;
 }
+
+.make::-webkit-scrollbar {
+  width: 3px;
+}
+
+.make ::-webkit-scrollbar-track {
+  background: green;
+}
+.make::-webkit-scrollbar-track {
+  background: #ddd;
+}
+.make::-webkit-scrollbar-thumb {
+  background-color: green;
+  border-radius: 5px;
+}
