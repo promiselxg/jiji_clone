@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #ebf2f7;
+  min-height: 100vh;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./assets/fonts/helveticaneue/HelveticaNeue.ttf");
+}
+@font-face {
+  font-family: "Helvetica Medium";
+  src: url("./assets/fonts/helveticaneue/HelveticaNeueMed.ttf");
+}
+@font-face {
+  font-family: "Helvetica Bold";
+  src: url("./assets/fonts/helveticaneue/HelveticaNeueBd.ttf");
+}
