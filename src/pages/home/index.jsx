@@ -1,13 +1,18 @@
 import { FiPlus } from "react-icons/fi";
 import { HomeSlider, Navbar } from "../../components";
 import Card from "../../components/common/Card";
+import Hero from "../../components/header/Hero";
 
 const Home = () => {
   return (
     <>
+      <Hero />
       <div className="flex w-full bg-whitesmoke ">
         <div className="container flex mx-auto w-[85%] py-3 justify-between gap-3 ">
-          <div className="w-1/4 bg-[#fff] sticky top-[70px] shadow-md h-[550px] z-10">
+          <div
+            className="w-1/4 bg-[#fff] sticky top-[70px]  h-[550px] z-10"
+            style={{ boxShadow: "1px 1px 4px rgba(80,114,125,.4)" }}
+          >
             <Navbar />
           </div>
           <div className="h-fit w-3/4">

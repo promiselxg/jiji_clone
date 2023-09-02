@@ -6,7 +6,7 @@ const Links = ({ url, label, count, ...children }) => {
     <>
       <Link to={url} className="text-[14px] flex items-center gap-2">
         <span {...children}>{label}</span>
-        <span className="text-[#ccc]">{count}</span>
+        {count && <span className="text-[#ccc]">{count}</span>}
       </Link>
     </>
   );
