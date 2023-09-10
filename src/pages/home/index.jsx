@@ -10,7 +10,7 @@ const Home = () => {
       <div className="flex w-full bg-whitesmoke ">
         <div className="container flex mx-auto w-[85%] py-3 justify-between gap-3 ">
           <div
-            className="w-1/4 bg-[#fff] sticky top-[70px]  h-[550px] z-10"
+            className="w-1/4 bg-[#fff] sticky top-[70px]  h-[550px] z-10 overflow-y-clip"
             style={{ boxShadow: "1px 1px 4px rgba(80,114,125,.4)" }}
           >
             <Navbar />

@@ -1,56 +1,96 @@
-import { FiChevronRight } from "react-icons/fi";
 import React from "react";
+import NavLinks from "./navLinks";
 
 const Navbar = () => {
   const [isShow, setIshow] = React.useState(false);
   return (
     <>
-      <div className="flex w-full relative">
-        {/* <NavLinks /> */}
+      <div className="flex w-full relative  ">
         <div className="flex flex-col w-full gap-y-1">
-          <div
-            className="flex w-full  items-center justify-between cursor-pointer p-2 hover:bg-[#ebf2f7] "
-            onMouseEnter={() => setIshow(true)}
-          >
-            <div className="flex items-center gap-1">
-              <img
-                src="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
-                alt=""
-                className="w-[40px] h-[40px]"
-              />
-              <div className="flex flex-col leading-tight">
-                <span className="font-HelveticaMedium text-[14px] font-[400]">
-                  Vehicles
-                </span>
-                <span className="text-[14px] font-Helvetica font-[600]">
-                  236,567 ads
-                </span>
-              </div>
-            </div>
-            <FiChevronRight />
-          </div>
-          <div
-            className="flex w-full  items-center justify-between cursor-pointer p-2 hover:bg-gray-light "
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
             onMouseEnter={() => setIshow(true)}
             onMouseLeave={() => setIshow(false)}
-          >
-            <div className="flex items-center gap-1">
-              <img
-                src="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
-                alt=""
-                className="w-[40px] h-[40px]"
-              />
-              <div className="flex flex-col leading-tight">
-                <span className="font-HelveticaMedium text-[14px] font-[400]">
-                  Vehicles
-                </span>
-                <span className="text-[14px] font-Helvetica font-[600]">
-                  236,567 ads
-                </span>
-              </div>
-            </div>
-            <FiChevronRight />
-          </div>
+          />
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
+            onMouseEnter={() => setIshow(true)}
+            onMouseLeave={() => setIshow(false)}
+          />
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
+            onMouseEnter={() => setIshow(true)}
+            onMouseLeave={() => setIshow(false)}
+          />
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
+            onMouseEnter={() => setIshow(true)}
+            onMouseLeave={() => setIshow(false)}
+          />
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
+            onMouseEnter={() => setIshow(true)}
+            onMouseLeave={() => setIshow(false)}
+          />
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
+            onMouseEnter={() => setIshow(true)}
+            onMouseLeave={() => setIshow(false)}
+          />
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
+            onMouseEnter={() => setIshow(true)}
+            onMouseLeave={() => setIshow(false)}
+          />
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
+            onMouseEnter={() => setIshow(true)}
+            onMouseLeave={() => setIshow(false)}
+          />
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
+            onMouseEnter={() => setIshow(true)}
+            onMouseLeave={() => setIshow(false)}
+          />
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
+            onMouseEnter={() => setIshow(true)}
+            onMouseLeave={() => setIshow(false)}
+          />
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
+            onMouseEnter={() => setIshow(true)}
+            onMouseLeave={() => setIshow(false)}
+          />
+          <NavLinks
+            img="https://assets.jijistatic.com/art/attributes/categories/vehicles.png"
+            label="Vehicles"
+            count="236,567"
+            onMouseEnter={() => setIshow(true)}
+            onMouseLeave={() => setIshow(false)}
+          />
         </div>
       </div>
       {isShow && (
