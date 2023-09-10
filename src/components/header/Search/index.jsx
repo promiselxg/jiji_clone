@@ -1,4 +1,3 @@
-import React from "react";
 import { FiSearch, FiMapPin } from "react-icons/fi";
 const Search = () => {
   return (
