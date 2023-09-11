@@ -64,33 +64,6 @@ const Product = ({ data }) => {
           ))}
         </Masonry>
       </ResponsiveMasonry>
-      {/* <div>
-        <div className="w-full relative bg-white">
-          <div>
-            <img
-              src="https://pictures-nigeria.jijistatic.com/103879455_MzAwLTIyNS0xOWQ2MDA3MzY3.webp"
-              alt=""
-            />
-          </div>
-          <div className="p-2">
-            <h1 className="text-[#00b53f] font-[700] text-[18px]">N200,000</h1>
-            <h2>Abs Pump Hybrid Camry08</h2>
-            <p>Payment on delivery within Lagos</p>
-            <div>
-              <FiMapPin /> <h1>Lagos, Mushin</h1>
-            </div>
-            <div>
-              <span>Used</span>
-              <span>
-                <img
-                  src="https://assets.jijistatic.com/static/img/premium-landing/enterprise.svg"
-                  alt=""
-                />
-              </span>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };
