@@ -1,8 +1,10 @@
 import { BreadcrumbsWithIcon } from "../../components/common/Breadcrumb";
 import CategoryCard from "../components/Cards/Category";
+import Product from "../components/Cards/Product";
 import Location from "../components/Location";
 import Price from "../components/Price";
-import { vehiclesData } from "../data";
+import { vehiclesData, vehiclesProductData } from "../data";
+import Sort from "../components/Sort";
 
 const Vehicles = () => {
   return (
@@ -18,7 +20,10 @@ const Vehicles = () => {
               <Location />
               <Price />
             </div>
-            {/* <div className="bg-[green] w-3/4">deede</div> */}
+            <div className="w-3/4">
+              <Sort />
+              <Product data={vehiclesProductData} />
+            </div>
           </div>
         </div>
       </div>
